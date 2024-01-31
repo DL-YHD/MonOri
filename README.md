@@ -75,41 +75,41 @@ ImageSets
 (If the kitti dataset is placed in the program's 'ImageSets' directory, you don't need to do any changes.) 
 
 ## Training
-You can set 'CUDA_VISIBLE_DEVICES' to use one or more GPU for training.
+You can set 'CUDA_VISIBLE_DEVICES' and '--gpus' to use one or more GPU for training.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --batch_size 8 --config runs/monori.yaml --output output/exp
+CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --num_gpus 1 --batch_size 8 --config runs/monori.yaml --output output/exp
 ```
 
 You can also set the '--ckpt' parameter to specify a pre-trained model.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --batch_size 8 --config runs/monori.yaml --ckpt YOUR_CKPT --output output/exp
+CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --num_gpus 1 --batch_size 8 --config runs/monori.yaml --ckpt YOUR_CKPT --output output/exp
 ```
 
 #  Evaluation
 During the evaluation phase, you can evaluate the checkpoint by specifying the '--eval' parameter and executing the following command.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --config runs/monori.yaml --ckpt YOUR_CKPT  --eval
+CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --num_gpus 1 --config runs/monori.yaml --ckpt YOUR_CKPT  --eval
 ```
 
 If you want to evaluate on the test set and upload it to the official website, you can specify the '--test' parameter.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --config runs/monori.yaml --ckpt YOUR_CKPT  --eval --test
+CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --num_gpus 1 --config runs/monori.yaml --ckpt YOUR_CKPT  --eval --test
 ```
 
 #  Visualization
 If you want to see the visualization results on predicted heatmap and 3D bounding boxes, you can specify the '--vis' parameter on the evaluate command.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --config runs/monoflex.yaml --ckpt YOUR_CKPT --eval --vis
+CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --num_gpus 1 --config runs/monoflex.yaml --ckpt YOUR_CKPT --eval --vis
 ```
 or visualize on the test set.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --config runs/monori.yaml --ckpt YOUR_CKPT  --eval --test --vis
+CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --num_gpus 1 --config runs/monori.yaml --ckpt YOUR_CKPT  --eval --test --vis
 ```
 You can find our trining logs at [./output](./output/), We also provid our pretrained weight model at [here](https://drive.google.com/file/d/1Qi0DlZImQHY6SJKTRFuwuyuB_epmbYdR/view?usp=sharing)
 
