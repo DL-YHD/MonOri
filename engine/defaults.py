@@ -33,7 +33,7 @@ def default_argument_parser():
         default=None,
     )
     
-    parser.add_argument("--num_gpus", type=int, default=2, help="number of gpu")
+    parser.add_argument("--num_gpus", type=int, default=1, help="number of gpu")
     parser.add_argument("--batch_size", type=int, default=1, help="number of batch_size")
     parser.add_argument("--num_work", type=int, default=1, help="number of workers for dataloader")
     parser.add_argument("--output", type=str, default='output/exp')
