@@ -1,0 +1,15 @@
+yacs
+matplotlib
+scikit-image
+opencv-python
+tensorboard
+tqdm
+fire
+shapely
+pycocotools
+iopath
+click
+pyyaml
+fvcore
+numba
+fightingcv-attention
