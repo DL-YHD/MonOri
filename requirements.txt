@@ -12,4 +12,5 @@ click
 pyyaml
 fvcore
 numba
+einops
 fightingcv-attention
