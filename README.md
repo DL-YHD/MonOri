@@ -31,10 +31,6 @@ Build DCNv2 (We provide the latest DCNv2 version that can build on the CUDA 11 a
 cd model/backbone/DCNv2
 
 . make.sh
-
-cd ../../..
-
-python setup.py develop
 ```
 
 ## Data Preparation
