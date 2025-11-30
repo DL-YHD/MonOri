@@ -187,8 +187,25 @@ The performance on KITTI validation set (3D) is as follows:
 
 If you find our work useful in your research, please consider citing:
 
-```
+```bibtex
+@article{yao2023occlusion,
+  title={Occlusion-aware plane-constraints for monocular 3D object detection},
+  author={Yao, Hongdou and Chen, Jun and Wang, Zheng and Wang, Xiao and Han, Pengfei and Chai, Xiaoyu and Qiu, Yansheng},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={25},
+  number={5},
+  pages={4593--4605},
+  year={2023},
+  publisher={IEEE}
+},
 
+@article{yao2025monori,
+  title={MonOri: Orientation-Guided PnP for Monocular 3-D Object Detection},
+  author={Yao, Hongdou and Han, Pengfei and Chen, Jun and Wang, Zheng and Qiu, Yansheng and Wang, Xiao and Chai, Xiaoyu and Cao, Chenglong and Jin, Wei and others},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2025},
+  publisher={IEEE}
+}
 ```
 
 ## Acknowlegment
